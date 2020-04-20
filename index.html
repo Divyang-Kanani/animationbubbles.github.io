@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>Bubbles</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	div
+	{
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: black;
+	}
+	div ul{
+		display: flex;
+		border-bottom: 10px solid blue;	
+	}
+	div ul li{
+		width: 50px;
+		height: 50px;
+		list-style: none;
+		margin: 0 10px;
+		background-color: black;
+		border-radius: 50%;
+		box-shadow: 0px 12px 30px 0px #ad0000;
+		animation: bouncy 1s linear infinite;
+	}
+	@keyframes bouncy{
+		0%{transform: translateY(0);}
+		50%{transform: translateY(-150px);}
+		100%{transform: translateY(0);}
+	}
+	ul li:nth-child(1)
+	{
+		animation-delay: 0.2s;
+
+		background-color: #fdcb63;
+	}
+	ul li:nth-child(2)
+	{
+		animation-delay: 0.4s;
+		background-color: #ff7675;
+	}
+	ul li:nth-child(3)
+	{
+		animation-delay: 0.6s;
+		background-color: #81ecec;
+	}
+	ul li:nth-child(4)
+	{
+
+		animation-delay: 0.8s;
+		background-color: #55efc4;
+	}
+	ul li:nth-child(5)
+	{
+		animation-delay: 0.9s;
+		background-color: #fd79a8
+	}
+	footer,p{
+		margin-bottom: 100px;
+		background-color: blue;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<footer >
+
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
